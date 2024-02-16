@@ -1,0 +1,160 @@
+body,html{
+    padding: 0px;
+    margin:0px;
+    width:100%;
+   overflow-x: hidden;
+}
+header{
+    transform: scale(1.0);
+}
+#dados,.lupa,.fundo,.fechar,.pesquisa{
+    display: none;
+    margin-top:-400px;
+}
+
+#logo{
+    height: 65px;
+    width: 65px;
+    transform: translateX(118px);
+}
+#img-compra{
+    display: flex;
+    transform: translateX(60px);
+}
+#img-menu{
+    display: flex;
+    transform: translateX(-280px);
+}
+.scape{
+    transform: translateY(-0px);/*esconder menu*/
+}
+/*SLIDESHOW MOB*/
+.prev, .next { 
+    display: none;
+  }
+  .slideshow-container{
+    width: 100%;
+
+  }
+  #img-slideshow,.config-img-banner{
+    width: 100%;
+    transform: scaleY(0.9) translateY(-50px);
+  }
+
+  .marcas,.fundo-anuncioebooks,.fundo-anuncioescola{
+    display: none;
+    visibility: hidden;
+  }
+  .categoria{
+    padding: 0;
+    margin: 0;
+  
+
+  }
+  #categoriamob{
+    transform: translateY(-460px);
+    height: 200px;
+    padding:6px;
+  }
+.fundo-img-catalogo{
+  display: none;
+}
+#fundo-img-catalogomob{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    overflow: scroll;
+    padding: 5px;
+    margin-left:-10px;
+}
+
+#imgcatalogo{
+    transform:scale(0.7);
+}
+
+.botao-catalogo{
+    display: none;
+}
+
+  #descontodoismob{
+    transform: translateY(-460px);
+
+  }
+  #titulo-categoria{
+    display: flex;
+    align-items: center;
+    align-items: center;
+    font-size: 22px;
+    text-align: center;
+    transform: translateY(-500px) translateX(150px);
+
+  }
+  #linhamob{
+    display: flex;
+    position: relative;
+    top:-500px;
+    width: 40px;
+    background-color: #0c212d;
+  }
+  .titulo-produto{
+    transform: scale(0.9);
+    margin-top:-8px;
+  }
+
+  #desconto-produto{
+   display: none;
+  }
+  .botao-compra, #botao-carrinho{
+    margin-top:-25px;
+    transform: translateY();
+  }
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*PRODUTOS*/
+#fundo-opcmob{
+    transform: translateY(40px);
+}
+#linhamob{
+    transform: translateY(20px);
+}
+#sectiondoismob{
+    transform: translateY(-460px);
+}
+#fundo-produtosmob{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding:5px;
+
+
+}
+#bloco{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:176px;
+    height:355px;
+    padding: 0;
+    margin:4px;
+    transform: translateX(2px) scale(1.0);
+}
+

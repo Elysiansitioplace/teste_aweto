@@ -1,0 +1,475 @@
+body{
+    padding: 0;
+    margin:0; 
+    overflow-x: hidden;
+    width: 100%;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+}
+.anuncio,#textanuncio,#menupc, .texto-anuncio{
+    display: none;
+}
+
+header{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #0c212d;
+    height:90px;
+    width: 100%;
+    z-index:1; 
+  }
+  main{
+    z-index: 0;
+  }
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top:10px;
+}
+
+#dados{
+    margin:28px;
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+.scape{
+    display: none;/*esconder menu*/
+}
+#img-compra:hover{
+    background-color: #0c212d;
+    border:2px solid white;
+    border-radius:20px;
+    padding:10px;
+    transition: .2s;
+    cursor:pointer;
+}
+
+
+
+/* ESTILIZAÇÃO DO MENU 1*/
+.fundo-raçao{
+    display: none;
+    cursor: pointer;
+    transition:.2s;
+}
+.fechar-menu1{
+    transform: translateY(200px) translateX(-990px);
+    cursor: pointer;
+    height:20px;
+    width: 170px;
+}
+.fechar-menu1:hover{
+    display: flex;
+    background-color: #02141c;
+}
+/* ATIVAÇÃO MENU 1*/
+.ativar-raçao{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding:10px;
+    background-color:#02141c;
+    height: 270px;
+    cursor:default;
+    color: white;
+    position: absolute;
+    width: 100%;
+    transform: translateY(190px);
+    z-index: 1;
+}
+/* ESTILIZAÇÃO DA LUPA*/
+.fundo{
+    height:45px;
+    width: 37px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    color:white;
+    transition: .2s;
+}
+.fundo:hover{
+    background-color: #02141c;
+    border:2px solid white;
+    border-radius:20px;
+    padding:5px;
+    color: white;
+
+}
+.fundo.abrir{
+    width:240px;
+    background-color: #02141c;
+}
+
+.lupa {
+    font-size: 30px;
+    padding:10px;
+    cursor: pointer;
+    transform: translateX(-10px);
+}
+.fechar{
+    font-size: 20px;
+    transform: translateX(-30px);
+    cursor: pointer;
+}
+.pesquisa , input{
+    background-color: transparent;
+    border:0;
+    outline: 0;
+    font-size: 17px;
+    width:calc(80px -70px);
+    color:white;
+}
+
+/*SLIDESHOW*/
+
+
+.slideshow-container {
+    position: relative;
+    margin: auto;
+    transform: translateY(95px);
+  }
+
+  .mySlides {
+    display: none;
+  }
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+  }
+  #img-slideshow{
+    width: 100%;
+    height: 550px;
+  }
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+
+/* Estilização das marcas*/
+.marcas{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top:100px; 
+    background-color:#0c212d;
+    height:380px;
+}
+.fundo-anuncioebooks{
+    display: flex;
+    text-align: left;
+    flex-wrap: wrap;
+    height: 280px;
+    width: 400px;
+    border: 3px solid #ff9b00; 
+    border-radius:25px;
+    padding: 15px;
+    background-color:#0c212d;
+}
+.fundo-anuncioebooks:hover{
+    border-radius: 40px;
+    transform: translateY(-15px);
+    transition: 0.8s ease-in-out;
+    cursor: pointer;
+    border: 3px solid white; 
+}
+#icone-ebooks{
+    font-size: 40px;
+    color:white;
+}
+#titulo-ebooks{
+    margin:-1px 4px;
+    width: 350px;
+    color: white;
+    font-size: 20px;
+}
+.lista-ebooks{
+    color: white;
+   list-style:circle;
+   margin-top:8px;
+}
+.lista-ebooks2{
+    margin-top:8px;
+    color: white;
+    list-style:circle;
+    transform: translateY(25px);    
+}
+#texto-ebooks{
+    font-size: 15px;
+    margin:0;
+    font-weight: bold;
+    color: #ff9b00;
+}
+
+
+
+.fundo-anunciodesconto{
+    display: flex;
+    text-align: left;
+    flex-wrap: wrap;
+    height: 280px;
+    width: 400px;
+    border: 3px solid #ff9b00; 
+    border-radius:25px;
+    padding: 15px;
+}
+.fundo-anunciodesconto:hover{
+    border-radius: 40px;
+    transform: translateY(-15px);
+    transition: 0.8s ease-in-out;
+    cursor: pointer;
+    border: 3px solid white; 
+}
+.fundo-anuncioescola{
+    display: flex;
+    text-align: left;
+    flex-wrap: wrap;
+    height: 280px;
+    width: 400px;
+    border: 3px solid #ff9b00; 
+    border-radius:25px;
+    padding: 15px;   
+}
+.fundo-anuncioescola:hover{
+    border-radius: 40px;
+    transform: translateY(-15px);
+    transition: 0.8s ease-in-out;
+    cursor: pointer;
+    border: 3px solid white; 
+}
+
+
+#icone-escola{
+    font-size: 40px;
+    color:white;
+}
+#icone-desconto{
+    font-size: 40px;
+    color:white;
+}
+/* Estilização das Pesquisas*/
+.pesquisadois{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    height:100px;
+    color:white;
+    background-color:#0c212d;
+}
+#pesquisadois{
+    border:2px solid white;
+    font-size:24px;
+    border-radius: 20px;
+    color:white;
+    padding: 13px;
+    font-weight: bold;
+    width:500px;
+    height: 10px;
+    background-color:transparent;
+}
+
+/*CATEGORIA*/
+
+.categoria{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    transform: translateY(0px);
+    background-color: #0c212d;
+    height:300px;
+    width: 100%;
+}
+.fundo-img-catalogo{
+    display: flex;
+    overflow: hidden;
+}
+#imgcatalogo{
+    width:120px;
+    height: 180px;
+    transition: .1s;
+    cursor: pointer;
+    margin:40px;
+}
+#imgcatalogo:hover{
+    transform: scale(0.8);
+}
+.botao-catalogo{
+    background-color: transparent;
+    border:0;
+    cursor: pointer;
+}
+#botao-catalogo{
+    font-size: 48px;
+    transition: .1s;
+    cursor: pointer;
+    color:#0794d3;
+}
+
+/*DESCONTO DOIS*/
+.desconto-dois{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+    background-color:#0794d3;
+    height:40px;
+    color:#d0dd97;
+    transform: translateY(0px);
+}
+
+
+/*SEÇAO DE PRODUTOS*/
+
+
+.fundo-opc{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    transform: translateY(60px) translateX(150px);
+    color: #02141c;
+    font-size: 22px;
+}
+hr{
+    border:2px solid #0c212d;
+    transform: translateY(40px);
+    width:80%;
+}
+
+.sectiondois{
+    transform: translateY(50px);
+}
+.fundo-produtos{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding:40px;
+}
+.bloco{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width:240px;
+    height:385px;
+    border:2px solid #0c212d;  
+    border-radius:20px; 
+    padding:14px;
+    margin:15px;  
+}
+
+.img-fundo{
+    width: 180px;
+    height: 210px;
+    padding: 4px;
+    border:2px solid #00000069;  
+    }
+#titulo-produto{
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    font-weight: normal;
+    padding: 8px;
+}
+#desconto-produto{
+    transform: translateY(-45px) translateX(-32px);
+    font-size: 16px;
+    width: 60px;
+}
+#preço-produto{
+    font-size: 25px;
+    font-weight: bold;
+    color:#0794d3;
+    transform: translateY(-50px);
+}
+
+#botao-compra{
+    width:100px;
+    height:40px;
+    background-color: #0794d3;
+    font-size: 19px;
+    border:2px solid #0794d3;
+    border-right:none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transform: translateY(-50px);
+}
+#botao-compra:hover{
+    background-color:#0c212d;
+}
+#botao-carrinho{
+    height:40px;
+    background-color: #0c212d;
+    border:2px solid #0c212d;
+    cursor: pointer;
+    transform: translateY(-50px) translateX(-2px);
+}
+#botao-carrinho:hover{
+    background-color: #0794d3;
+    border:2px solid #0794d3; 
+}
+
+
+#carrinho-produtos{
+    transform: scale(0.8) translateY(-5px);
+    padding: 2px;
+    cursor: pointer;
+    transition: .2s;    
+}
+#numero3{
+    transform: translateY(100px);
+    height:500px;
+    width: 100%;
+}
+.fundo-veja{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0794d3;
+    width: 170px;
+    transform: translateX(650px);
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: .2s;
+}
+.fundo-veja:hover{
+    background-color: #0c212d;
+}
+
+
