@@ -1,58 +1,243 @@
-body,html{
-    padding: 0px;
-    margin:0px;
-    width:100%;
-   overflow-x: hidden;
-}
-header{
-    transform: scale(1.0);
-}
-#dados,.lupa,.fundo,.fechar,.pesquisa{
-    display: none;
-    margin-top:-400px;
-}
+@media (max-width:700px){
 
-#logo{
-    height: 65px;
-    width: 65px;
-    transform: translateX(118px);
-}
-#img-compra{
+    
+        /*
+    
+    CABEÇALHO
+
+    */
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: 120px;
+        z-index: 0;
+    }
+    #logo{
+        transform: translateX(105px) scale(0.9);
+           
+    }
+    /*
+    
+    DESATIVAR PARA MOBILE
+
+    */
+    #texto-nav,.fundo,.lupa,.pesquisa,.fechar
+    ,#input-pesquisa,.fundo:hover,.prev, .next, .caminhos
+    ,.fundo-anuncioebooks{
+        display: none;
+        transition: 0;
+        visibility: hidden;
+        margin: 0;
+        padding: 0;
+    }
+    .caminhos,.fundo-anuncioebooks,.botao-catalogo{
+        visibility: hidden;
+        display: none;
+    }
+
+    /*
+    
+    ICONE MENU
+    
+    */
+    .fundo-menu{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        position: absolute;
+        width: 45px;
+        height: 50px;
+        overflow: hidden;
+        transform: translateY(-15px) translateX(-140px);
+    }
+
+    .ativar-menu{
+        width: 100%;
+        height: 500px;
+        transform: translateY(350px);
+        transition: .2s;
+        background-color: #02141c;
+    }
+
+    #nav-icone-menu{
+        height: 65px;
+        width: 45px;
+        transition: .2s;
+    }
+    #nav-icone-menu:hover{
+        background-color: #02141c;
+        border:2px solid white;
+        border-radius:20px;
+        padding:5px;
+        color: white;
+        transform: translateY(-20px) scale(1.2);
+    }
+
+    .fundo-texto-menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 40px;
+
+   
+    }
+    .menu-texto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        width: 100%;
+        background-color: #0c212d;
+        border:2px solid #02141c;
+        padding: 10px;
+        margin: 10px;
+        
+    }
+    .fechar-menu{
+        font-size: 38px;
+        margin-top:4px;
+        margin-left: -12px;
+        transition: .2s;
+    }
+
+    
+
+
+
+
+
+    .config-lupa{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color:#0c212d;
+        width: 100%;
+        padding:9px;
+        color: #0c212d;
+
+    }
+    /*
+    
+    LUPA
+    
+    */
+    .fundo-lupa{
+        display: flex;
+        justify-content: left;
+        background-color: white;
+        width: 85%;
+        font-size: 22px;
+        font-weight: bold;
+        padding: 6px;
+        color: #0c212d;      
+    }
+    #input-lupa{
+        padding:5px;
+        margin-left:10px; 
+        color: #0c212d;
+        width: 80%;   
+        font-size: 20px; 
+    }
+    #lupamob{
+        font-size: 25px;
+        color: #02141c;
+        padding:2px;
+        font-weight: bold;
+    }
+
+    .fundo-carrossel, .mySlides{
+        transform: translateY(45px);
+        z-index: 1;
+    }
+
+          /*
+
+CARRINHO
+  */
+  .fundo-carrinhomob{
     display: flex;
-    transform: translateX(60px);
-}
-#img-menu{
-    display: flex;
-    transform: translateX(-280px);
-}
-.scape{
-    transform: translateY(-0px);/*esconder menu*/
-}
-/*SLIDESHOW MOB*/
-.prev, .next { 
-    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 35px;
+    height: 35px;
+    padding: 15px;
+    overflow:hidden;
+    transition: .2s; 
   }
-  .slideshow-container{
-    width: 100%;
-
-  }
-  #img-slideshow,.config-img-banner{
-    width: 100%;
-    transform: scaleY(0.9) translateY(-50px);
+  #carrinho-fecharmob{
+    font-size: 24px;
+    color: white;
+    transition: .2s;
+    cursor: pointer; 
+    padding: 12px;
+    transition: .2s;  
+    transform: translateY(-5px);    
   }
 
-  .marcas,.fundo-anuncioebooks,.fundo-anuncioescola{
-    display: none;
-    visibility: hidden;
-  }
-  .categoria{
-    padding: 0;
-    margin: 0;
   
 
+
+      /*
+
+  CAMINHOS
+
+  */
+
+
+  #titulo-ebooks{
+    margin-top:-5px;
+    margin-left:10px;
+    width: 300px;
+    color: white;
+    font-size: 20px;
+}
+
+.caminho-mobile{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(265px);
+    width: 100%;
+    height: 500px;
+    background-color:#0c212d;
+}
+.anuncio1{
+    display: flex;
+    align-items: left;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: #0c212d;
+    border: 3px solid #ff9b00; 
+    width: 90%;
+    height: 100px;
+    margin-top:15px;
+    padding: 10px;
+}
+#titulo-ebooksmob{
+    margin-left: -45px;
+    transform: translateX(40px) translateY(-5px);
+    width:90%;
+    color: white;
+    font-size: 16px;
+}
+#texto-ebooksmob{
+    transform: translateY(-20px) translateX(10px);
+    font-size: 13px;
+    width: 100%;
+    font-weight: bold;
+    color: #ff9b00;
+}
+.categoria{
+    padding: 0;
+    margin: 0;
   }
   #categoriamob{
-    transform: translateY(-460px);
+    transform: translateY(270px);
     height: 200px;
     padding:6px;
   }
@@ -69,92 +254,129 @@ header{
 }
 
 #imgcatalogo{
-    transform:scale(0.7);
+    transform:scale(0.9);
 }
 
 .botao-catalogo{
     display: none;
 }
 
-  #descontodoismob{
-    transform: translateY(-460px);
 
-  }
-  #titulo-categoria{
-    display: flex;
-    align-items: center;
-    align-items: center;
-    font-size: 22px;
-    text-align: center;
-    transform: translateY(-500px) translateX(150px);
-
-  }
-  #linhamob{
-    display: flex;
-    position: relative;
-    top:-500px;
-    width: 40px;
-    background-color: #0c212d;
-  }
-  .titulo-produto{
-    transform: scale(0.9);
-    margin-top:-8px;
-  }
-
-  #desconto-produto{
-   display: none;
-  }
-  .botao-compra, #botao-carrinho{
-    margin-top:-25px;
-    transform: translateY();
-  }
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*PRODUTOS*/
+#descontodoismob{
+    transform: translateY(260px);
+}
 #fundo-opcmob{
-    transform: translateY(40px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(280px);
+
 }
 #linhamob{
-    transform: translateY(20px);
+    transform: translateY(270px);
+    width: 40px;
 }
+
+
 #sectiondoismob{
-    transform: translateY(-460px);
+    margin: 0;
 }
 #fundo-produtosmob{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding:5px;
-
-
+    margin: 0;
+    padding: 0;
+    transform: translateY(-200px);
 }
 #bloco{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 450px;
+    margin: 0;
+    transform: translateY(-200px);
+    background-color: white;
+    border-radius: 0px;
+}
+#titulo-produto{
+    transform: translateY(-20px);
+}
+#desconto-produto{
+    display: none;
+}
+#preço-produto{
+    margin-top: 35px;
+}
+#botao-compra{
+   margin-top: -15px;
+}
+.botao-carrinho{
+    display: flex;
     justify-content: center;
     align-items: center;
-    width:176px;
-    height:355px;
-    padding: 0;
-    margin:4px;
-    transform: translateX(2px) scale(1.0);
+    height:40px;
+    min-width: 141px;
+    margin:11px;
+}
+#fundo-veja{
+    display: flex;
+    background-color: #0794d3;
+    transform: translateX(110px) translateY(-350px) scale(0.9);
+}
+#fundo-veja:hover{
+    background-color: #0c212d;
 }
 
+.ativar-carrinho{
+    margin-top: 245px;
+    display: flex;
+    position: absolute;
+    max-width: 100%;
+    height: 800px;
+}
+#fundo-bannerdois{
+    transform: translateY(-350px) translateX(-20px);
+}
+.footer{
+    background-color: #02141c;
+    transform: translateY(400px);
+    height: 1000px;
+    width: 100%;
+}
+#redes{
+    display: none;
+}
+#fundo-texto{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    font-size: 18px;
+    margin: 0;
+    width: 100%;
+
+}
+#infor-final{
+    display: flex;
+    justify-content: left;
+    width: 100%;
+}
+
+#logo-redes{
+    display: flex;
+    width: 35px;
+    height: 35px;
+    transform: translateY(250px) translateX(-125px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+}
